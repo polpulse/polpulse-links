@@ -263,6 +263,134 @@
     .pulse-divider .ecg-trace { animation: none; stroke-dasharray: none; }
   }
 
+
+  /* ---------- audience totals ---------- */
+  .audience-summary {
+    max-width: 520px;
+    margin: 24px auto 0;
+    padding: 0 20px;
+  }
+  .audience-card {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 18px;
+    min-height: 108px;
+    padding: 18px 20px;
+    border: 1.5px solid color-mix(in srgb, var(--accent) 45%, var(--border));
+    border-radius: 18px;
+    background:
+      radial-gradient(circle at 100% 0%, color-mix(in srgb, var(--accent) 24%, transparent), transparent 48%),
+      linear-gradient(145deg, color-mix(in srgb, var(--card) 94%, var(--accent) 6%), var(--card));
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.16);
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.28s ease, transform 0.28s ease, background 0.3s ease;
+  }
+  .audience-card.is-ready {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .audience-card::after {
+    content: "";
+    position: absolute;
+    right: -44px;
+    bottom: -62px;
+    width: 160px;
+    height: 160px;
+    border: 1px solid color-mix(in srgb, var(--accent) 24%, transparent);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .audience-copy,
+  .audience-number-wrap { position: relative; z-index: 1; }
+  .audience-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 5px;
+    color: var(--muted);
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .audience-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 13%, transparent);
+  }
+  .audience-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  .audience-meta {
+    margin: 5px 0 0;
+    color: var(--muted);
+    font-size: 11.5px;
+    line-height: 1.35;
+  }
+  .audience-number-wrap { text-align: right; }
+  .audience-total {
+    display: block;
+    font-size: clamp(30px, 8vw, 40px);
+    font-weight: 800;
+    letter-spacing: -0.045em;
+    line-height: 0.95;
+    white-space: nowrap;
+  }
+  .audience-total-label {
+    display: block;
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .link-audience {
+    flex: none;
+    min-width: 50px;
+    text-align: right;
+    line-height: 1.05;
+  }
+  .link-audience[hidden] { display: none; }
+  .follower-number {
+    display: block;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 750;
+    letter-spacing: -0.02em;
+  }
+  .follower-label {
+    display: block;
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  @media (max-width: 390px) {
+    .audience-card { gap: 12px; padding: 17px 16px; }
+    .audience-title { font-size: 14.5px; }
+    .audience-meta { font-size: 10.5px; }
+    .audience-total { font-size: 29px; }
+    .link-audience { min-width: 43px; }
+    .follower-number { font-size: 14.5px; }
+    .follower-label { font-size: 8.5px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .audience-card { transition: none; transform: none; }
+  }
+
   /* ---------- links ---------- */
   .links {
     max-width: 520px;
@@ -501,6 +629,21 @@
   <svg class="pulse-divider" viewBox="0 0 120 26" aria-hidden="true"><path class="ecg-base" pathLength="200" d="M0 13 H38 l6 -5 l6 5 h8 l5 -11 l7 20 l5 -9 h9 l5 -4 l5 4 H120"/><path class="ecg-trace" pathLength="200" d="M0 13 H38 l6 -5 l6 5 h8 l5 -11 l7 20 l5 -9 h9 l5 -4 l5 4 H120"/></svg>
 </section>
 
+
+<section class="audience-summary" id="audience-summary" aria-label="PolPulse audience figures" hidden>
+  <div class="audience-card" id="audience-card" aria-live="polite">
+    <div class="audience-copy">
+      <div class="audience-eyebrow"><span class="audience-dot" aria-hidden="true"></span>PolPulse community</div>
+      <p class="audience-title">Growing across every major platform</p>
+      <p class="audience-meta" id="audience-updated">Combined platform totals · audiences may overlap</p>
+    </div>
+    <div class="audience-number-wrap">
+      <strong class="audience-total" id="audience-total">—</strong>
+      <span class="audience-total-label">combined following</span>
+    </div>
+  </div>
+</section>
+
 <main class="links" data-screen-label="Links">
   <div class="links-header">
     <h2 class="section-label">Follow PolPulse</h2>
@@ -516,6 +659,10 @@
       </span>
       <span class="link-desc" style="display: block;">Join the discussion and follow every update</span>
     </span>
+    <span class="link-audience" data-follower-platform="facebook" hidden>
+      <span class="follower-number"></span>
+      <span class="follower-label"></span>
+    </span>
     <span class="link-arrow">→</span>
   </a>
 
@@ -524,6 +671,10 @@
     <span class="link-body">
       <span class="link-name">TikTok</span>
       <span class="link-desc" style="display: block;">Daily political clips and reactions</span>
+    </span>
+    <span class="link-audience" data-follower-platform="tiktok" hidden>
+      <span class="follower-number"></span>
+      <span class="follower-label"></span>
     </span>
     <span class="link-arrow">→</span>
   </a>
@@ -534,6 +685,10 @@
       <span class="link-name">Instagram</span>
       <span class="link-desc" style="display: block;">Daily graphics and breaking stories</span>
     </span>
+    <span class="link-audience" data-follower-platform="instagram" hidden>
+      <span class="follower-number"></span>
+      <span class="follower-label"></span>
+    </span>
     <span class="link-arrow">→</span>
   </a>
 
@@ -543,6 +698,10 @@
       <span class="link-name">YouTube</span>
       <span class="link-desc" style="display: block;">Investigations and longer analysis</span>
     </span>
+    <span class="link-audience" data-follower-platform="youtube" hidden>
+      <span class="follower-number"></span>
+      <span class="follower-label"></span>
+    </span>
     <span class="link-arrow">→</span>
   </a>
 
@@ -551,6 +710,10 @@
     <span class="link-body">
       <span class="link-name">X / Twitter</span>
       <span class="link-desc" style="display: block;">Breaking updates and live commentary</span>
+    </span>
+    <span class="link-audience" data-follower-platform="x" hidden>
+      <span class="follower-number"></span>
+      <span class="follower-label"></span>
     </span>
     <span class="link-arrow">→</span>
   </a>
@@ -597,6 +760,97 @@
 
 
 
+
+
+<script>
+  // Load manually maintained audience figures from followers.json.
+  (function () {
+    var summary = document.getElementById('audience-summary');
+    var card = document.getElementById('audience-card');
+    var totalEl = document.getElementById('audience-total');
+    var updatedEl = document.getElementById('audience-updated');
+    if (!summary || !card || !totalEl) return;
+
+    var labels = {
+      facebook: 'followers',
+      tiktok: 'followers',
+      instagram: 'followers',
+      youtube: 'subscribers',
+      x: 'followers'
+    };
+
+    function parseCount(value) {
+      if (typeof value === 'number' && isFinite(value)) return value;
+      if (typeof value !== 'string') return null;
+      var cleaned = value.trim().toLowerCase().replace(/,/g, '');
+      var match = cleaned.match(/^([0-9]+(?:\.[0-9]+)?)\s*([kmb])?$/);
+      if (!match) return null;
+      var multiplier = { k: 1e3, m: 1e6, b: 1e9 }[match[2]] || 1;
+      return Number(match[1]) * multiplier;
+    }
+
+    function compact(value) {
+      return new Intl.NumberFormat('en-GB', {
+        notation: 'compact',
+        compactDisplay: 'short',
+        maximumFractionDigits: 1
+      }).format(value).replace(/\.0(?=[KMB])/i, '');
+    }
+
+    function formatDate(value) {
+      if (!value) return '';
+      var date = new Date(String(value) + (String(value).length === 10 ? 'T12:00:00' : ''));
+      if (isNaN(date.getTime())) return '';
+      return date.toLocaleDateString('en-GB', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+      });
+    }
+
+    fetch('followers.json?v=' + Date.now(), { cache: 'no-store' })
+      .then(function (response) {
+        if (!response.ok) throw new Error('Could not load followers.json');
+        return response.json();
+      })
+      .then(function (data) {
+        // Support either "x" or "twitter" in the JSON file.
+        if (data.x == null && data.twitter != null) data.x = data.twitter;
+
+        var total = 0;
+        var visiblePlatforms = 0;
+
+        Object.keys(labels).forEach(function (platform) {
+          var value = parseCount(data[platform]);
+          var stat = document.querySelector('[data-follower-platform="' + platform + '"]');
+          if (value == null || value < 0 || !stat) return;
+
+          total += value;
+          visiblePlatforms += 1;
+          stat.querySelector('.follower-number').textContent = compact(value);
+          stat.querySelector('.follower-label').textContent = labels[platform];
+          stat.setAttribute('aria-label', compact(value) + ' ' + labels[platform]);
+          stat.hidden = false;
+        });
+
+        if (!visiblePlatforms || total <= 0) return;
+
+        totalEl.textContent = compact(total) + '+';
+        var dateText = formatDate(data.updated);
+        updatedEl.textContent = dateText
+          ? 'Updated ' + dateText + ' · audiences may overlap'
+          : 'Combined platform totals · audiences may overlap';
+
+        summary.hidden = false;
+        requestAnimationFrame(function () {
+          card.classList.add('is-ready');
+        });
+      })
+      .catch(function () {
+        // The rest of the link page remains fully usable if the JSON is unavailable.
+      });
+  })();
+</script>
 
 <script>
   // Deep-link social cards to native apps on mobile, fall back to web.
