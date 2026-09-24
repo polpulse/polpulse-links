@@ -2,34 +2,232 @@
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b111c">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050c1c">
   <meta name="color-scheme" content="dark">
-  <title>PolPulse — Taking the pulse of UK politics</title>
-  <meta name="description" content="Independent UK political commentary. Solo-run. AI-hosted. Follow PolPulse for Westminster clips, analysis and conversation. All official channels in one place.">
-  <link rel="canonical" href="https://links.polpulse.co.uk/">
+  <title>PolPulse | Independent UK political accountability</title>
+  <meta name="description" content="PolPulse is an independent, solo-run UK political accountability channel. What MPs said, how they voted and what the record shows, in plain English. Every official channel in one place.">
+  <link rel="canonical" href="https://polpulse.co.uk/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="PolPulse — Taking the pulse of UK politics">
-  <meta property="og:description" content="Solo-run. AI-hosted. 100% independent. All official PolPulse channels in one place.">
-  <meta property="og:url" content="https://links.polpulse.co.uk/">
+  <meta property="og:site_name" content="PolPulse">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="PolPulse | Taking the pulse of UK politics">
+  <meta property="og:description" content="Independent UK political accountability. What MPs said, how they voted and what the record shows.">
+  <meta property="og:url" content="https://polpulse.co.uk/">
   <meta property="og:image" content="https://links.polpulse.co.uk/og.jpg">
+  <meta property="og:image:alt" content="PolPulse: taking the pulse of UK politics">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@PolPulseUK">
   <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="preload" href="assets/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <link rel="preload" href="assets/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"PolPulse","url":"https://polpulse.co.uk/","logo":"https://polpulse.co.uk/assets/favicon.png","email":"contact@polpulse.co.uk","description":"Independent, solo-run UK political accountability channel.","areaServed":"GB","sameAs":["https://www.facebook.com/PolPulseUK/","https://instagram.com/polpulse","https://tiktok.com/@polpulse","https://www.youtube.com/@PolPulseUK","https://x.com/PolPulseUK","https://buymeacoffee.com/polpulse"]}
+  </script>
   <style>
-  @font-face{font-family:Outfit;src:url('assets/outfit-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
-  :root{--bg:#0b111c;--panel:#111b29;--text:#f3f5f7;--muted:#a5afbf;--line:#293343;--accent:#85ebd0;--font:Outfit,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
-  *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:5px}button{cursor:pointer}svg{display:block;width:24px;height:24px;flex-shrink:0}img{display:block;max-width:100%}p,h1,h2,h3{margin:0}[hidden]{display:none!important}.wrap{width:min(1160px,calc(100% - 80px));margin-inline:auto}.eyebrow{font:500 11px/1.5 var(--font);letter-spacing:.19em;text-transform:uppercase}.muted{color:var(--muted)}.skip{position:absolute;left:20px;top:-80px;z-index:10;padding:12px 20px;background:var(--accent);color:var(--bg)}.skip:focus{top:12px}
-  .header{height:96px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px}.brand img{width:48px;height:48px;border-radius:50%;border:1px solid #3a4352}.wordmark{font-size:26px;font-weight:750;letter-spacing:-1px}.brand-note{display:block;font-size:9px;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:2px}.nav{display:flex;gap:30px;align-items:center;font-size:13px}.nav>a:not(.support-link){color:#c1c9d5}.nav>a:hover{color:var(--accent)}.support-link{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 16px;border:1px solid #687063;border-radius:5px;background:#e9efda;color:#18251d;font-size:12px;font-weight:600}.support-link svg{width:17px;height:17px}.nav>.support-link:hover{background:#fff;color:#18251d}
-  .hero{position:relative;isolation:isolate;min-height:540px;display:flex;align-items:center;overflow:hidden}.hero-picture{position:absolute;inset:0 0 0 22%;z-index:-3}.hero-picture img{width:100%;height:100%;object-fit:cover;object-position:76% 45%}.hero:before{content:'';position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,var(--bg) 5%,rgba(11,17,28,.93) 25%,rgba(11,17,28,.55) 51%,rgba(11,17,28,.06) 100%)}.hero:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,var(--bg),transparent 35%,rgba(11,17,28,.08) 80%,var(--bg))}.hero-content{padding:55px 0 62px;width:100%}.hero-kicker{display:flex;align-items:center;gap:10px;color:#d0d6df;margin-bottom:24px}.dot{width:6px;height:6px;display:inline-block;background:var(--accent);border-radius:50%;box-shadow:0 0 0 4px #85ebd014;flex-shrink:0}h1{max-width:730px;font-size:clamp(54px,6.6vw,88px);font-weight:650;letter-spacing:-.065em;line-height:1.025}h1 span{color:var(--accent)}.hero-desc{max-width:410px;color:#b7c1cf;font-size:16px;line-height:1.65;margin-top:24px}.hero-actions{display:flex;gap:24px;align-items:center;margin-top:29px}.primary{display:inline-flex;align-items:center;gap:28px;background:var(--accent);color:#0c211c;border:1px solid var(--accent);border-radius:4px;padding:14px 20px;font-size:14px;font-weight:650;transition:background .18s,transform .18s}.primary:hover{background:#b5f6e5;transform:translateY(-2px)}.primary span{font-size:20px;line-height:1}.text-link{display:inline-flex;align-items:center;gap:13px;font-size:13px;color:#c9d0da;padding:12px 0}.text-link:hover{color:var(--accent)}.hero-caption{position:absolute;right:0;bottom:48px;text-align:right;color:#a8b6c5;font-size:9px;letter-spacing:.17em;text-transform:uppercase}.hero-caption:before{content:'';display:block;width:24px;height:1px;background:var(--accent);margin:0 0 9px auto}.hero-pulse{position:absolute;right:26px;top:70px;width:106px;color:var(--accent);opacity:.8}.hero-pulse svg{width:100%;height:32px}
-  .community{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 0;display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:28px;align-items:center}.community-intro{display:flex;align-items:center;gap:17px}.community-icon{width:40px;height:40px;color:var(--accent);border:1px solid #85ebd03d;border-radius:50%;display:grid;place-items:center}.community-icon svg{width:22px;height:22px}.community-title{font-size:17px;font-weight:500;margin-bottom:4px}.community-meta{font-size:11px;line-height:1.6;color:var(--muted)}.community-stat{border-left:1px solid var(--line);padding-left:32px;display:flex;align-items:center;gap:16px}.stat-value{font-size:38px;font-weight:550;letter-spacing:-.05em;line-height:1}.stat-label{font-size:11px;line-height:1.6;color:var(--muted);max-width:125px}.accent{color:var(--accent)}
-  .channels{padding:52px 0 48px}.section-top{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:23px}.section-top .eyebrow{color:var(--accent);margin-bottom:7px}h2{font-size:32px;font-weight:500;letter-spacing:-.035em}.section-caption{color:var(--muted);font-size:12px;padding-bottom:4px}.channel-grid{display:grid;grid-template-columns:1.06fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:14px}.link-card{--brand:#d3dbe7;position:relative;display:flex;flex-direction:column;min-width:0;gap:17px;padding:23px;border:1px solid var(--line);border-radius:8px;background:linear-gradient(135deg,#142030,#101925);transition:transform .18s,border-color .18s,background .18s}.link-card:hover{transform:translateY(-3px);border-color:var(--brand);background:#172333}.card-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.chip{width:39px;height:39px;border-radius:10px;display:grid;place-items:center;color:var(--brand);background:#ffffff09}.chip svg{width:23px;height:23px;fill:currentColor}.link-arrow{align-self:flex-start;font-size:23px;color:#9ba8ba;transition:transform .18s,color .18s}.link-card:hover .link-arrow{color:var(--brand);transform:translate(2px,-2px)}.link-name-row{display:flex;gap:6px;align-items:center}.link-name{font-size:19px;font-weight:550;letter-spacing:-.02em}.verified-icon{display:inline-flex;color:#75baff}.verified-icon svg{width:15px;height:15px}.link-desc{display:block;color:var(--muted);font-size:12px;line-height:1.55;margin-top:6px}.link-audience{display:block;color:#dce3ec;font-size:12px;min-height:19px}.follower-number{font-weight:600}.follower-label{color:var(--muted);margin-left:3px;font-size:11px}.card-bottom{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:auto}.handle{font-size:10px;letter-spacing:.02em;color:#9caac0}.facebook{--brand:#76afff;grid-row:span 2;padding:27px;background:radial-gradient(ellipse at 0 0,#1b3453,transparent 80%),#121f30;overflow:hidden}.facebook:before{content:'f';position:absolute;font-family:Arial,sans-serif;font-size:320px;font-weight:bold;right:-5px;top:24px;line-height:1;color:#709de00a;pointer-events:none}.facebook .chip{width:48px;height:48px;background:#2475e7;color:white}.facebook .chip svg{width:27px;height:27px}.facebook .link-body{position:relative;margin-top:auto}.facebook .link-name{font-size:31px}.facebook .link-desc{font-size:14px;max-width:220px;line-height:1.65;margin-top:10px}.facebook .card-bottom{margin-top:8px;padding-top:22px;border-top:1px solid #ffffff18}.link-badge{align-self:flex-start;color:#bfd6f7;background:#24436a80;border:1px solid #668abd55;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:6px 8px;border-radius:3px}.tiktok{--brand:#78e8e2}.tiktok .chip{background:#f6f7f8}.instagram{--brand:#ff99b5}.youtube{--brand:#ff8989}.x{--brand:#e9edf3}
-  .lower{display:grid;grid-template-columns:1.45fr 1fr;gap:50px;padding:41px 0 48px;border-top:1px solid var(--line)}.about .eyebrow,.contact .eyebrow{color:var(--accent);margin-bottom:15px}.about h2{font-size:28px;max-width:400px;margin-bottom:14px}.about p{color:var(--muted);font-size:14px;line-height:1.8;max-width:550px}.principles{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px;font-size:11px;color:#d0d8e2}.principles span:before{content:'+';color:var(--accent);margin-right:7px}.contact{padding-left:40px;border-left:1px solid var(--line)}.contact h2{font-size:25px;margin-bottom:10px}.contact p{font-size:13px;line-height:1.7;color:var(--muted);max-width:280px}.email{display:inline-flex;align-items:center;gap:14px;font-size:16px;margin-top:22px;padding-bottom:7px;border-bottom:1px solid #718177}.email:hover{color:var(--accent)}.copy{display:flex;align-items:center;gap:7px;background:none;border:0;padding:12px 0;color:var(--muted);font-size:11px;min-height:40px}.copy:hover{color:var(--accent)}.copy svg{width:13px;height:13px}.copy-status{display:block;font-size:11px;color:var(--accent);min-height:17px}.support-banner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:25px 28px;border:1px solid #424c3d;background:linear-gradient(110deg,#1a261f,#151e1c);border-radius:7px}.support-intro{display:flex;align-items:center;gap:20px}.coffee-icon{display:grid;place-items:center;width:45px;height:45px;border-radius:50%;background:#ecf2dc0c;color:#d9e6c4}.support-banner h2{font-size:20px;margin-bottom:4px}.support-banner p{font-size:12px;color:#b2bcab}.support-banner .support-link{flex-shrink:0}.footer{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:30px 0;color:#94a0b2;font-size:10px}.footer-brand{font-size:17px;font-weight:650;letter-spacing:-.04em;color:#c7d0dd}.footer-right{display:flex;align-items:center;gap:25px}.back-top{display:inline-flex;align-items:center;gap:8px;min-height:36px}.back-top:hover{color:var(--accent)}
-  @media(min-width:1500px){.hero{min-height:590px}.hero-picture{inset:0 0 0 17%}}
-  @media(max-width:1000px){.wrap{width:calc(100% - 48px)}.nav{gap:20px}.community{grid-template-columns:1.2fr 1fr .8fr;gap:15px}.community-stat{padding-left:20px;gap:10px}.stat-value{font-size:32px}.stat-label{font-size:10px}.channel-grid{gap:10px}.link-card{padding:19px}.card-bottom{flex-wrap:wrap;gap:3px}.lower{gap:25px}.contact{padding-left:25px}}
-  @media(max-width:700px){.wrap{width:calc(100% - 36px)}.header{height:78px;gap:10px}.brand{gap:9px}.brand img{width:39px;height:39px}.wordmark{font-size:23px}.brand-note{font-size:8px}.nav>a:not(.support-link){display:none}.nav .support-link{font-size:11px;padding:10px 12px}.hero{min-height:475px;align-items:flex-start}.hero-picture{inset:0 -18px 0 0}.hero-picture img{object-position:74% 50%;opacity:.75}.hero:before{background:linear-gradient(90deg,rgba(11,17,28,.93),rgba(11,17,28,.35))}.hero:after{background:linear-gradient(0deg,var(--bg),transparent 55%,rgba(11,17,28,.35))}.hero-content{padding:45px 0 68px}.hero-kicker{font-size:9px;margin-bottom:25px}h1{font-size:clamp(48px,10.7vw,72px);max-width:600px}.hero-desc{font-size:14px;max-width:320px;line-height:1.7;margin-top:24px}.hero-actions{margin-top:26px;gap:22px}.primary{font-size:13px;padding:13px 17px;gap:22px}.text-link{font-size:12px}.hero-pulse{display:none}.hero-caption{font-size:8px;bottom:22px;right:0}.community{grid-template-columns:1fr 1fr;gap:22px;padding:24px 0}.community-intro{grid-column:1/-1}.community-title{font-size:16px}.community-stat{border-left:0;padding-left:0;gap:12px}.community-stat:last-child{border-left:1px solid var(--line);padding-left:22px}.stat-value{font-size:35px}.stat-label{font-size:10px}.channels{padding:36px 0}.section-top{display:block}h2{font-size:29px}.section-caption{max-width:none;text-align:left;line-height:1.5;font-size:11px;padding-top:9px}.channel-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;gap:12px}.facebook{grid-column:1/-1;grid-row:auto;min-height:240px;padding:23px}.facebook .link-body{margin-top:0}.facebook .link-name{font-size:27px}.facebook .link-desc{max-width:none;font-size:13px}.facebook .card-bottom{padding-top:14px;margin-top:0;flex-wrap:nowrap}.facebook:before{right:20px;top:-15px}.facebook .card-top .link-arrow{margin-left:auto}.link-card:not(.facebook){gap:16px;padding:18px 16px}.link-name{font-size:18px}.link-desc{font-size:11px;min-height:34px}.handle{font-size:9px}.link-audience{font-size:11px}.follower-label{font-size:10px}.lower{grid-template-columns:1fr;gap:32px;padding:32px 0}.about h2{font-size:27px}.about p{font-size:13px}.principles{gap:18px;font-size:10px}.contact{padding:29px 0 0;border-left:0;border-top:1px solid var(--line)}.contact p{max-width:none}.contact h2{font-size:25px}.email{margin-top:17px}.support-banner{padding:22px;align-items:flex-start;flex-direction:column;gap:19px}.support-intro{gap:14px}.support-banner h2{font-size:19px}.support-banner p{font-size:11px;line-height:1.6}.support-banner .support-link{margin-left:59px}.footer{padding:25px 0;align-items:flex-start}.footer-right{flex-direction:column;align-items:flex-end;gap:4px}.footer-copy{max-width:190px;line-height:1.7;text-align:right}}
-  @media(max-width:360px){.wrap{width:calc(100% - 28px)}.brand-note{letter-spacing:.1em}.nav .support-link{padding:9px;font-size:10px}.nav .support-link svg{display:none}.hero{min-height:475px}.hero-actions{gap:18px}.link-card:not(.facebook){padding:16px 12px}.stat-value{font-size:29px}.community-stat{gap:8px}.community-stat:last-child{padding-left:14px}.stat-label{font-size:9px}.principles{gap:11px}}
-  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+  @font-face{font-family:Poppins;src:url('assets/poppins-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+  @font-face{font-family:Poppins;src:url('assets/poppins-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+  @font-face{font-family:Poppins;src:url('assets/poppins-700.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+  :root{
+    --bg:#050c1c;--panel:#0a1630;--panel-2:#0d1c3b;--navy:#062B74;--red:#C8102E;--red-hi:#ff5c6f;
+    --text:#f5f7fb;--muted:#bcc6d8;--line:#1f2d4d;
+    --font:Poppins,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:24px;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom,0px)}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;cursor:pointer}
+  button,a{-webkit-tap-highlight-color:transparent}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--red-hi);outline-offset:4px;border-radius:4px}
+  svg{display:block;width:24px;height:24px;flex-shrink:0}
+  img{display:block;max-width:100%}
+  p,h1,h2,h3{margin:0}
+  [hidden]{display:none!important}
+  .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .wrap{width:min(1160px,calc(100% - 80px));margin-inline:auto}
+  .skip{position:absolute;left:20px;top:-80px;z-index:10;padding:12px 20px;background:var(--red);color:#fff;border-radius:4px}
+  .skip:focus{top:12px}
+
+  /* Header */
+  .header{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{width:48px;height:48px;border-radius:50%;border:2px solid var(--red)}
+  .wordmark{font-size:26px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+  .brand-note{display:block;font-size:13px;font-weight:400;letter-spacing:0;color:var(--muted);margin-top:2px}
+  .nav{display:flex;gap:28px;align-items:center;font-size:15px}
+  .nav>a:not(.support-link){color:var(--muted)}
+  .nav>a:not(.support-link):hover{color:var(--text)}
+  .support-link{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:10px 18px;border-radius:999px;background:#fff;color:var(--navy);font-size:15px;font-weight:500;transition:background .15s}
+  .support-link svg{width:18px;height:18px}
+  .support-link:hover{background:#e6ecf8}
+
+  /* Hero */
+  .hero{position:relative;isolation:isolate;min-height:560px;display:flex;align-items:center;overflow:hidden}
+  .hero-picture{position:absolute;inset:0 0 0 22%;z-index:-3}
+  .hero-picture img{width:100%;height:100%;object-fit:cover;object-position:76% 45%}
+  .hero:before{content:'';position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,var(--bg) 5%,rgba(5,12,28,.93) 27%,rgba(6,43,116,.45) 60%,rgba(5,12,28,.1) 100%)}
+  .hero:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,var(--bg),transparent 35%,transparent 80%,var(--bg))}
+  .hero-content{padding:56px 0 64px;width:100%}
+  .hero-kicker{display:inline-flex;align-items:center;gap:10px;color:var(--text);font-size:15px;font-weight:500;margin-bottom:22px;padding:6px 14px 6px 10px;border-radius:999px;background:rgba(200,16,46,.16);border:1px solid rgba(255,92,111,.35)}
+  .live{width:9px;height:9px;border-radius:50%;background:var(--red-hi);box-shadow:0 0 0 0 rgba(255,92,111,.6);animation:beat 2.4s ease-out infinite}
+  @keyframes beat{0%{box-shadow:0 0 0 0 rgba(255,92,111,.55)}70%{box-shadow:0 0 0 9px rgba(255,92,111,0)}100%{box-shadow:0 0 0 0 rgba(255,92,111,0)}}
+  h1{max-width:760px;font-size:clamp(46px,6.4vw,86px);font-weight:700;letter-spacing:-.035em;line-height:1.02}
+  .ecg{display:block;width:min(560px,100%);height:56px;margin:18px 0 4px;color:var(--red-hi);overflow:visible}
+  .ecg path{stroke-dasharray:720;stroke-dashoffset:720;animation:trace 1.8s .35s cubic-bezier(.6,.05,.3,1) forwards}
+  .ecg circle{opacity:0;animation:appear .3s 2.1s forwards}
+  @keyframes trace{to{stroke-dashoffset:0}}
+  @keyframes appear{to{opacity:1}}
+  .hero-desc{max-width:470px;color:#d3dae7;font-size:19px;line-height:1.6;margin-top:14px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;margin-top:30px}
+  .primary{display:inline-flex;align-items:center;gap:14px;min-height:52px;background:var(--red);color:#fff;border-radius:999px;padding:12px 26px;font-size:17px;font-weight:500;transition:background .15s}
+  .primary:hover{background:#a90d26}
+  .text-link{display:inline-flex;align-items:center;min-height:48px;font-size:16px;color:var(--text);border-bottom:2px solid var(--red)}
+  .text-link:hover{color:var(--red-hi)}
+  .hero-caption{position:absolute;right:0;bottom:44px;color:#aebad0;font-size:13px}
+
+  /* Community strip */
+  .community{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 0;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:28px;align-items:center}
+  .community-title{font-size:20px;font-weight:500;margin-bottom:2px}
+  .community-meta{font-size:15px;color:var(--muted)}
+  .community-stat{border-left:1px solid var(--line);padding-left:28px;display:flex;align-items:center;gap:16px}
+  .stat-value{font-size:40px;font-weight:700;letter-spacing:-.03em;line-height:1;color:var(--text)}
+  .stat-value.red{color:var(--red-hi)}
+  .stat-label{font-size:15px;line-height:1.4;color:var(--muted);max-width:150px}
+
+  /* Channels */
+  .channels{padding:56px 0 52px}
+  .section-top{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:24px}
+  h2{font-size:34px;font-weight:700;letter-spacing:-.025em;line-height:1.15}
+  .section-caption{color:var(--muted);font-size:16px;max-width:360px}
+  .channel-grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:14px}
+  .link-card{--brand:#d3dbe7;position:relative;display:grid;grid-template-columns:auto 1fr auto;grid-template-areas:"chip . arrow" "body body body";align-content:space-between;gap:20px 14px;min-width:0;padding:24px;border:1px solid var(--line);border-radius:14px;background:var(--panel);transition:border-color .15s,background .15s}
+  .link-card:hover{border-color:var(--brand);background:var(--panel-2)}
+  .chip{grid-area:chip;width:48px;height:48px;border-radius:12px;display:grid;place-items:center;color:var(--brand);background:#ffffff0d}
+  .chip svg{width:26px;height:26px;fill:currentColor}
+  .link-arrow{grid-area:arrow;align-self:start;font-size:24px;line-height:1;color:#9fb0cc}
+  .link-card:hover .link-arrow{color:var(--brand)}
+  .link-body{grid-area:body;min-width:0}
+  .link-name-row{display:flex;gap:7px;align-items:center}
+  .link-name{font-size:21px;font-weight:700;letter-spacing:-.01em;line-height:1.25}
+  .verified-icon{display:inline-flex;color:#4aa3ff}
+  .verified-icon svg{width:18px;height:18px}
+  .link-desc{display:block;color:var(--muted);font-size:15px;line-height:1.5;margin-top:4px}
+  .link-meta{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:12px;font-size:14px;color:#aebad0}
+  .link-audience{color:var(--text)}
+  .follower-number{font-weight:700}
+  .link-badge{display:inline-block;margin-bottom:12px;color:#fff;background:var(--red);font-size:13px;font-weight:500;padding:4px 12px;border-radius:999px}
+  .facebook{--brand:#6aa8ff;grid-row:span 2;padding:30px;background:radial-gradient(ellipse at 0 0,#0d3a8f,transparent 75%),var(--navy);border-color:#1d4aa0;overflow:hidden}
+  .facebook:hover{background:radial-gradient(ellipse at 0 0,#1146a8,transparent 75%),#073088}
+  .facebook .chip{width:56px;height:56px;background:#1877f2;color:#fff}
+  .facebook .chip svg{width:30px;height:30px}
+  .facebook .link-name{font-size:34px}
+  .facebook .link-desc{font-size:17px;color:#d6e2fa;max-width:280px;margin-top:6px}
+  .facebook .link-meta{margin-top:20px;padding-top:18px;border-top:1px solid #ffffff26;color:#c9d7f2}
+  .tiktok{--brand:#6ee9e3}.tiktok .chip{background:#f6f7f8}
+  .instagram{--brand:#ff8fb0}.youtube{--brand:#ff7b7b}.x{--brand:#e9edf3}
+
+  /* About + contact */
+  .lower{display:grid;grid-template-columns:1.4fr 1fr;gap:56px;padding:48px 0 52px;border-top:1px solid var(--line)}
+  .about h2{max-width:460px;margin-bottom:16px}
+  .about p{color:var(--muted);font-size:17px;line-height:1.75;max-width:580px}
+  .principles{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 0;padding:0;list-style:none}
+  .principles li{font-size:15px;color:var(--text);padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:var(--panel)}
+  .contact{padding-left:44px;border-left:1px solid var(--line)}
+  .contact h2{font-size:28px;margin-bottom:10px}
+  .contact p{font-size:16px;line-height:1.7;color:var(--muted);max-width:320px}
+  .email{display:inline-flex;align-items:center;min-height:48px;font-size:18px;font-weight:500;margin-top:16px;border-bottom:2px solid var(--red);word-break:break-all}
+  .email:hover{color:var(--red-hi)}
+  .copy{display:flex;align-items:center;gap:8px;background:none;border:0;padding:10px 0;color:var(--muted);font-size:15px;min-height:44px}
+  .copy:hover{color:var(--text)}
+  .copy svg{width:16px;height:16px}
+  .copy-status{display:block;font-size:15px;color:var(--red-hi);min-height:22px}
+
+  /* Support */
+  .support-banner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:28px 32px;border-radius:16px;background:linear-gradient(110deg,var(--navy),#0a1f55);border:1px solid #1d4aa0}
+  .support-banner h2{font-size:24px;margin-bottom:4px}
+  .support-banner p{font-size:16px;color:#d0dbf2}
+  .support-banner .support-link{flex-shrink:0;min-height:52px;padding:12px 24px;font-size:16px}
+
+  /* Footer */
+  .footer{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:32px 0 40px;color:#aebad0;font-size:14px}
+  .footer-brand{font-size:19px;font-weight:700;color:var(--text)}
+  .footer-brand span{color:var(--red-hi)}
+  .footer-note{max-width:520px;line-height:1.6;margin-top:6px}
+  .back-top{display:inline-flex;align-items:center;min-height:44px;white-space:nowrap}
+  .back-top:hover{color:var(--text)}
+
+  @media(min-width:1500px){.hero{min-height:600px}.hero-picture{inset:0 0 0 17%}}
+  @media(max-width:1000px){
+    .wrap{width:calc(100% - 48px)}
+    .community{grid-template-columns:1.2fr 1fr 1fr;gap:16px}.community-stat{padding-left:18px;gap:10px}.stat-value{font-size:34px}
+    .channel-grid{gap:10px}.link-card{padding:20px}
+    .lower{gap:28px}.contact{padding-left:28px}
+  }
+  @media(max-width:760px){
+    body{font-size:16px}
+    .wrap{width:calc(100% - 32px)}
+    .header{min-height:76px;gap:10px}
+    .brand img{width:42px;height:42px}
+    .wordmark{font-size:23px}.brand-note{font-size:12px}
+    .nav>a:not(.support-link){display:none}
+    .nav .support-link{font-size:14px;padding:9px 14px}
+    .hero{min-height:500px;align-items:flex-start}
+    .hero-picture{inset:0 -16px 0 0}
+    .hero-picture img{object-position:74% 50%;opacity:.6}
+    .hero:before{background:linear-gradient(90deg,rgba(5,12,28,.92),rgba(5,12,28,.45))}
+    .hero:after{background:linear-gradient(0deg,var(--bg),transparent 55%,rgba(5,12,28,.4))}
+    .hero-content{padding:36px 0 70px}
+    .hero-kicker{font-size:14px;margin-bottom:20px}
+    h1{font-size:clamp(40px,11.5vw,64px)}h1 br{display:none}
+    .ecg{height:44px;margin-top:14px}
+    .hero-desc{font-size:17px;max-width:none}
+    .primary{width:100%;justify-content:center;font-size:17px}
+    .hero-caption{bottom:22px;font-size:12px}
+    .community{grid-template-columns:1fr 1fr;gap:18px;padding:22px 0}
+    .community-intro{grid-column:1/-1}
+    .community-stat{border-left:0;padding-left:0;gap:10px}
+    .community-stat:last-child{border-left:1px solid var(--line);padding-left:18px}
+    .stat-value{font-size:34px}.stat-label{font-size:14px}
+    .channels{padding:40px 0}
+    .section-top{display:block}
+    h2{font-size:28px}
+    .section-caption{font-size:16px;margin-top:6px;max-width:none}
+    /* One big tappable row per channel on phones */
+    .channel-grid{grid-template-columns:1fr;grid-template-rows:auto;gap:10px}
+    .link-card,.facebook{grid-row:auto;grid-template-areas:"chip body arrow";grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding:16px}
+    .link-arrow{align-self:center}
+    .link-name{font-size:19px}
+    .link-desc{font-size:15px;margin-top:2px}
+    .link-meta{margin-top:6px;font-size:14px}
+    .facebook{padding:20px 16px}
+    .facebook .link-name{font-size:24px}
+    .facebook .link-desc{font-size:16px;max-width:none}
+    .facebook .link-meta{margin-top:10px;padding-top:10px}
+    .facebook .chip{align-self:start}
+    .link-badge{margin-bottom:8px}
+    .lower{grid-template-columns:1fr;gap:32px;padding:36px 0}
+    .about p{font-size:16px}
+    .contact{padding:30px 0 0;border-left:0;border-top:1px solid var(--line)}
+    .contact p{max-width:none}
+    .support-banner{padding:24px 20px;flex-direction:column;align-items:stretch;gap:18px}
+    .support-banner h2{font-size:22px}
+    .support-banner .support-link{width:100%}
+    .footer{flex-direction:column;gap:10px}
+  }
+  @media(max-width:360px){
+    .brand-note{display:none}
+    .nav .support-link svg{display:none}
+    .link-card,.facebook{padding:14px 12px;gap:12px}
+    .chip{width:42px;height:42px}
+    .stat-value{font-size:30px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*:before,*:after{transition:none!important;animation:none!important}
+    .ecg path{stroke-dashoffset:0}.ecg circle{opacity:1}
+  }
   </style>
 </head>
 <body id="top">
@@ -37,82 +235,89 @@
 <div class="wrap">
   <header class="header">
     <a class="brand" href="#top" aria-label="PolPulse home"><img src="assets/polpulse.webp" width="48" height="48" alt=""><span class="wordmark">PolPulse<span class="brand-note">Independent UK politics</span></span></a>
-    <nav class="nav" aria-label="Main navigation"><a href="#channels">The channels</a><a href="#about">About PolPulse</a><a class="support-link" data-event="click-buymeacoffee" href="https://buymeacoffee.com/polpulse" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h13v7a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8ZM17 9h2a3 3 0 0 1 0 6h-2M3 22h16M8 2v3m5-3v3"/></svg><span>Buy Me a Coffee</span></a></nav>
+    <nav class="nav" aria-label="Main navigation"><a href="#channels">Channels</a><a href="#about">About</a><a href="#contact">Contact</a><a class="support-link" data-event="click-buymeacoffee-header" href="https://buymeacoffee.com/polpulse" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 8h13v7a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8ZM17 9h2a3 3 0 0 1 0 6h-2M3 22h16M8 2v3m5-3v3"/></svg><span>Support</span><span class="sr-only"> PolPulse on Buy Me a Coffee (opens in a new tab)</span></a></nav>
   </header>
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <picture class="hero-picture"><source media="(max-width:700px)" srcset="assets/westminster-mobile.webp"><img src="assets/westminster.webp" width="1440" height="804" fetchpriority="high" alt="The Houses of Parliament beneath dramatic storm clouds"></picture>
+      <picture class="hero-picture"><source media="(max-width:760px)" srcset="assets/westminster-mobile.webp"><img src="assets/westminster.webp" width="1440" height="804" fetchpriority="high" alt=""></picture>
       <div class="hero-content">
-        <p class="hero-kicker eyebrow"><span class="dot" aria-hidden="true"></span> Independent voice. Westminster focus.</p>
-        <h1 id="hero-title">Taking the pulse<br>of <span>UK politics.</span></h1>
-        <p class="hero-desc">The clips. The context. The conversation.<br>Independent political commentary, with a finger on the pulse of Westminster.</p>
-        <div class="hero-actions"><a class="primary" href="#channels">Find your channel <span aria-hidden="true">↗</span></a><a class="text-link" href="#about">Meet PolPulse <span aria-hidden="true">→</span></a></div>
+        <p class="hero-kicker"><span class="live" aria-hidden="true"></span>New posts every day</p>
+        <h1 id="hero-title">Taking the pulse<br>of UK politics.</h1>
+        <svg class="ecg" viewBox="0 0 560 56" fill="none" aria-hidden="true" preserveAspectRatio="none"><path d="M0 34h190l12-14 14 26 20-44 18 46 12-14h294" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="556" cy="34" r="4" fill="currentColor"/></svg>
+        <p class="hero-desc">What MPs said, how they voted, and what the record actually shows. Independent political accountability, in plain English.</p>
+        <div class="hero-actions"><a class="primary" href="#channels">Follow PolPulse</a><a class="text-link" href="#about">Who runs PolPulse?</a></div>
       </div>
-      <div class="hero-pulse"><svg viewBox="0 0 120 32" fill="none" aria-hidden="true"><path d="M0 17h35l8-8 10 17L66 2l10 15h44" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
-      <span class="hero-caption">Westminster · London</span>
+      <span class="hero-caption" aria-hidden="true">Westminster, London</span>
     </section>
+
     <section class="community" aria-label="PolPulse community">
-      <div class="community-intro"><span class="community-icon"><svg viewBox="0 0 120 32" fill="none" aria-hidden="true"><path d="M0 17h35l8-8 10 17L66 2l10 15h44" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><p class="community-title">One voice. A growing community.</p><p class="community-meta" id="audience-updated">Find PolPulse across five official channels.</p></div></div>
-      <div class="community-stat"><strong class="stat-value accent" id="audience-total">5</strong><span class="stat-label" id="audience-label">official social<br>channels</span></div>
-      <div class="community-stat"><strong class="stat-value">100<span style="font-size:.6em">%</span></strong><span class="stat-label">independent.<br>Always.</span></div>
+      <div class="community-intro"><p class="community-title">One independent voice. A growing community.</p><p class="community-meta" id="audience-updated">Find PolPulse on five official channels.</p></div>
+      <div class="community-stat"><strong class="stat-value red" id="audience-total">5</strong><span class="stat-label" id="audience-label">official social channels</span></div>
+      <div class="community-stat"><strong class="stat-value">100%</strong><span class="stat-label">independent. No party, no backers.</span></div>
     </section>
+
     <section class="channels" id="channels" aria-labelledby="channels-title">
-      <div class="section-top"><div><p class="eyebrow">Stay in the conversation</p><h2 id="channels-title">Your feed. Your choice.</h2></div><p class="section-caption">Five platforms. All officially PolPulse.</p></div>
+      <div class="section-top"><h2 id="channels-title">Follow PolPulse where you already scroll.</h2><p class="section-caption">Tap a channel to open it. If you have the app, it opens there.</p></div>
       <div class="channel-grid">
         <a class="link-card facebook" data-event="click-facebook" href="https://www.facebook.com/PolPulseUK/" target="_blank" rel="noopener">
-          <span class="card-top"><span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></span><span class="link-badge">Best place to start</span><span class="link-arrow" aria-hidden="true">↗</span></span>
-          <span class="link-body"><span class="link-name-row"><span class="link-name">Facebook</span><span class="verified-icon" role="img" aria-label="Verified account" title="Verified account">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="currentColor" d="m23 12-2.44-2.79.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.81 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12Z"/>
-            <path fill="#fff" d="m10.09 16.72-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35Z"/>
-          </svg>
-        </span></span><span class="link-desc">Join the discussion and follow every update.</span></span>
-          <span class="card-bottom"><span class="link-audience" data-follower-platform="facebook" hidden><span class="follower-number"></span> <span class="follower-label"></span></span><span class="handle">@PolPulseUK</span></span>
-        </a>
-        <a class="link-card tiktok" data-event="click-tiktok" href="https://tiktok.com/@polpulse" target="_blank" rel="noopener">
-          <span class="card-top"><span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><g transform="translate(-0.9, -0.9)"><path fill="#25f4ee" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path></g><g transform="translate(0.9, 0.9)"><path fill="#fe2c55" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path></g><path fill="#010101" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path></svg></span><span class="link-arrow" aria-hidden="true">↗</span></span>
-          <span class="link-body"><span class="link-name-row"><span class="link-name">TikTok</span></span><span class="link-desc">Daily political clips and reactions.</span></span>
-          <span class="card-bottom"><span class="link-audience" data-follower-platform="tiktok" hidden><span class="follower-number"></span> <span class="follower-label"></span></span><span class="handle">@polpulse</span></span>
+          <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></span>
+          <span class="link-body"><span class="link-badge">Best place to start</span><span class="link-name-row"><span class="link-name">Facebook</span><span class="verified-icon" role="img" aria-label="Verified account" title="Verified account"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m23 12-2.44-2.79.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.81 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12Z"/><path fill="#fff" d="m10.09 16.72-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35Z"/></svg></span></span><span class="link-desc">Daily posts and the busiest comment section. Join the discussion.</span><span class="link-meta"><span class="handle">@PolPulseUK</span><span class="link-audience" data-follower-platform="facebook" hidden><span class="follower-number"></span> <span class="follower-label"></span></span></span></span>
+          <span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span>
         </a>
         <a class="link-card instagram" data-event="click-instagram" href="https://instagram.com/polpulse" target="_blank" rel="noopener">
-          <span class="card-top"><span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg></span><span class="link-arrow" aria-hidden="true">↗</span></span>
-          <span class="link-body"><span class="link-name-row"><span class="link-name">Instagram</span><span class="verified-icon" role="img" aria-label="Verified account" title="Verified account">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="currentColor" d="m23 12-2.44-2.79.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.81 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12Z"/>
-            <path fill="#fff" d="m10.09 16.72-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35Z"/>
-          </svg>
-        </span></span><span class="link-desc">Daily graphics and breaking stories.</span></span>
-          <span class="card-bottom"><span class="link-audience" data-follower-platform="instagram" hidden><span class="follower-number"></span> <span class="follower-label"></span></span><span class="handle">@polpulse</span></span>
+          <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg></span>
+          <span class="link-body"><span class="link-name-row"><span class="link-name">Instagram</span><span class="verified-icon" role="img" aria-label="Verified account" title="Verified account"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m23 12-2.44-2.79.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.81 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12Z"/><path fill="#fff" d="m10.09 16.72-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35Z"/></svg></span></span><span class="link-desc">Swipe-through explainers and breaking stories.</span><span class="link-meta"><span class="handle">@polpulse</span><span class="link-audience" data-follower-platform="instagram" hidden><span class="follower-number"></span> <span class="follower-label"></span></span></span></span>
+          <span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span>
+        </a>
+        <a class="link-card tiktok" data-event="click-tiktok" href="https://tiktok.com/@polpulse" target="_blank" rel="noopener">
+          <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><g transform="translate(-0.9, -0.9)"><path fill="#25f4ee" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path></g><g transform="translate(0.9, 0.9)"><path fill="#fe2c55" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path></g><path fill="#010101" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path></svg></span>
+          <span class="link-body"><span class="link-name-row"><span class="link-name">TikTok</span></span><span class="link-desc">Short videos on the day's politics.</span><span class="link-meta"><span class="handle">@polpulse</span><span class="link-audience" data-follower-platform="tiktok" hidden><span class="follower-number"></span> <span class="follower-label"></span></span></span></span>
+          <span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span>
         </a>
         <a class="link-card youtube" data-event="click-youtube" href="https://www.youtube.com/@PolPulseUK" target="_blank" rel="noopener">
-          <span class="card-top"><span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></span><span class="link-arrow" aria-hidden="true">↗</span></span>
-          <span class="link-body"><span class="link-name-row"><span class="link-name">YouTube</span></span><span class="link-desc">Investigations and longer analysis.</span></span>
-          <span class="card-bottom"><span class="link-audience" data-follower-platform="youtube" hidden><span class="follower-number"></span> <span class="follower-label"></span></span><span class="handle">@PolPulseUK</span></span>
+          <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></span>
+          <span class="link-body"><span class="link-name-row"><span class="link-name">YouTube</span></span><span class="link-desc">Longer investigations and analysis.</span><span class="link-meta"><span class="handle">@PolPulseUK</span><span class="link-audience" data-follower-platform="youtube" hidden><span class="follower-number"></span> <span class="follower-label"></span></span></span></span>
+          <span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span>
         </a>
         <a class="link-card x" data-event="click-x" href="https://x.com/PolPulseUK" target="_blank" rel="noopener">
-          <span class="card-top"><span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.933zM17.61 20.644h2.039L6.486 3.24H4.298l13.312 17.404z"></path></svg></span><span class="link-arrow" aria-hidden="true">↗</span></span>
-          <span class="link-body"><span class="link-name-row"><span class="link-name">X / Twitter</span><span class="verified-icon" role="img" aria-label="Verified account" title="Verified account">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="currentColor" d="m23 12-2.44-2.79.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.81 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12Z"/>
-            <path fill="#fff" d="m10.09 16.72-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35Z"/>
-          </svg>
-        </span></span><span class="link-desc">Breaking updates and live commentary.</span></span>
-          <span class="card-bottom"><span class="link-audience" data-follower-platform="x" hidden><span class="follower-number"></span> <span class="follower-label"></span></span><span class="handle">@PolPulseUK</span></span>
+          <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.933zM17.61 20.644h2.039L6.486 3.24H4.298l13.312 17.404z"></path></svg></span>
+          <span class="link-body"><span class="link-name-row"><span class="link-name">X (Twitter)</span><span class="verified-icon" role="img" aria-label="Verified account" title="Verified account"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m23 12-2.44-2.79.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.81 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12Z"/><path fill="#fff" d="m10.09 16.72-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35Z"/></svg></span></span><span class="link-desc">Breaking updates and live commentary.</span><span class="link-meta"><span class="handle">@PolPulseUK</span><span class="link-audience" data-follower-platform="x" hidden><span class="follower-number"></span> <span class="follower-label"></span></span></span></span>
+          <span class="link-arrow" aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span>
         </a>
       </div>
     </section>
+
     <div class="lower">
-      <section class="about" id="about" aria-labelledby="about-title"><p class="eyebrow">Behind the pulse</p><h2 id="about-title">Solo-run. AI-hosted.<br>100% independent.</h2><p>PolPulse is one UK voter who got sick of being lied to. No media execs. No foreign money. No party line. Just independent Westminster commentary, the clips that matter, and space for the conversation.</p><div class="principles"><span>Solo-run</span><span>AI-hosted</span><span>New posts daily</span></div></section>
-      <section class="contact" id="contact" aria-labelledby="contact-title"><p class="eyebrow">Get in touch</p><h2 id="contact-title">Got a story worth telling?</h2><p>Tips, corrections, or a story the media won't touch? Get in touch with PolPulse.</p><a class="email" data-event="click-email" href="mailto:contact@polpulse.co.uk">contact@polpulse.co.uk <span aria-hidden="true">↗</span></a><button class="copy" type="button" id="copy-email" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V3H3v13h5"/></svg>Copy email address</button><span class="copy-status" id="copy-status" role="status"></span></section>
+      <section class="about" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">One person. No party line. Nobody to answer to but you.</h2>
+        <p>PolPulse is run by one UK voter who got tired of being lied to. No media executives, no foreign money, no party. The aim is simple: take what happens in Westminster, check it against the record, and explain it in plain English so you can make up your own mind.</p>
+        <p style="margin-top:14px">Videos are presented by an AI host, which is how one person can publish every day.</p>
+        <ul class="principles"><li>Solo-run</li><li>AI-presented</li><li>New posts daily</li><li>Corrections made openly</li></ul>
+      </section>
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Got a story worth telling?</h2>
+        <p>Send tips, documents, or corrections. If something PolPulse published is wrong, say so and it will be fixed.</p>
+        <a class="email" data-event="click-email" href="mailto:contact@polpulse.co.uk">contact@polpulse.co.uk</a>
+        <button class="copy" type="button" id="copy-email" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V3H3v13h5"/></svg>Copy email address</button>
+        <span class="copy-status" id="copy-status" role="status"></span>
+      </section>
     </div>
-    <aside class="support-banner" aria-label="Support PolPulse"><div class="support-intro"><span class="coffee-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h13v7a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8ZM17 9h2a3 3 0 0 1 0 6h-2M3 22h16M8 2v3m5-3v3"/></svg></span><div><h2>Keep the independent voice going.</h2><p>If PolPulse is your kind of politics, a coffee goes a long way.</p></div></div><a class="support-link" data-event="click-buymeacoffee" href="https://buymeacoffee.com/polpulse" target="_blank" rel="noopener">Buy Me a Coffee <span aria-hidden="true">↗</span></a></aside>
+
+    <aside class="support-banner" aria-labelledby="support-title">
+      <div><h2 id="support-title">Keep PolPulse independent.</h2><p>No sponsors and no party funding. If this is your kind of politics, a coffee keeps it going.</p></div>
+      <a class="support-link" data-event="click-buymeacoffee" href="https://buymeacoffee.com/polpulse" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 8h13v7a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8ZM17 9h2a3 3 0 0 1 0 6h-2M3 22h16M8 2v3m5-3v3"/></svg><span>Buy me a coffee</span><span class="sr-only"> (opens in a new tab)</span></a>
+    </aside>
   </main>
-  <footer class="footer"><a class="footer-brand" href="#top">PolPulse<span class="accent">.</span></a><div class="footer-right"><span class="footer-copy">© 2026 PolPulse · All channels above are official</span><a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a></div></footer>
+  <footer class="footer">
+    <div><a class="footer-brand" href="#top">PolPulse<span>.</span></a><p class="footer-note">© <span id="year">2026</span> PolPulse. The channels listed above are the only official PolPulse accounts. This site sets no cookies; visits are counted anonymously.</p></div>
+    <a class="back-top" href="#top">Back to top ↑</a>
+  </footer>
 </div>
 <script>
 (function () {
   'use strict';
-  // Plain HTTPS links work without JavaScript and let the device handle installed apps.
+  var y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+
   var copy = document.getElementById('copy-email');
   var status = document.getElementById('copy-status');
   if (navigator.clipboard && window.isSecureContext) {
@@ -123,9 +328,10 @@
         status.textContent = 'Email address copied.';
         clearTimeout(reset);
         reset = setTimeout(function () { status.textContent = ''; }, 3500);
-      }).catch(function () { status.textContent = 'Copy unavailable. Select the email address above.'; });
+      }).catch(function () { status.textContent = 'Copy failed. Press and hold the email address to copy it.'; });
     });
   }
+
   var labels = { facebook: 'followers', tiktok: 'followers', instagram: 'followers', youtube: 'subscribers', x: 'followers' };
   var formatter = new Intl.NumberFormat('en-GB', { notation: 'compact', maximumFractionDigits: 1 });
   function parseCount(value) {
@@ -136,7 +342,6 @@
     var count = Number(match[1]) * ({ k: 1e3, m: 1e6, b: 1e9 }[(match[2] || '').toLowerCase()] || 1);
     return Number.isFinite(count) ? count : null;
   }
-  // Revalidate the small JSON file; fonts and pictures remain independently cacheable.
   fetch('followers.json', { cache: 'no-cache' }).then(function (response) {
     if (!response.ok) throw new Error('Audience figures unavailable');
     return response.json();
@@ -147,6 +352,7 @@
       var value = parseCount(platform === 'x' && data.x == null ? data.twitter : data[platform]);
       if (value === null) return;
       var stat = document.querySelector('[data-follower-platform="' + platform + '"]');
+      if (!stat) return;
       stat.querySelector('.follower-number').textContent = formatter.format(value);
       stat.querySelector('.follower-label').textContent = labels[platform];
       stat.hidden = false;
@@ -155,10 +361,11 @@
     });
     if (!available || !Number.isFinite(total)) return;
     document.getElementById('audience-total').textContent = formatter.format(total);
-    document.getElementById('audience-label').textContent = 'combined platform following';
+    document.getElementById('audience-label').textContent = 'people following across platforms';
     var date = typeof data.updated === 'string' ? new Date(data.updated.length === 10 ? data.updated + 'T12:00:00' : data.updated) : null;
-    document.getElementById('audience-updated').textContent = (date && !isNaN(date.getTime()) ? 'Updated ' + date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) + ' · ' : '') + 'Audiences may overlap';
-  }).catch(function () { /* Keep all channels available if optional figures cannot load. */ });
+    document.getElementById('audience-updated').textContent = (date && !isNaN(date.getTime()) ? 'Figures updated ' + date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) + '. ' : '') + 'Some people follow on more than one platform.';
+  }).catch(function () { /* Channels stay usable without figures. */ });
+
   document.querySelectorAll('[data-event]').forEach(function (link) {
     link.addEventListener('click', function () {
       if (window.goatcounter && typeof window.goatcounter.count === 'function') {
@@ -166,7 +373,7 @@
       }
     });
   });
-  // Analytics is optional and starts after the main page has loaded.
+
   window.addEventListener('load', function () {
     if (location.hostname === 'localhost' || location.hostname === '127.0.0.1' || location.protocol === 'file:') return;
     var script = document.createElement('script');
